@@ -1,5 +1,6 @@
 import moment from "moment";
-import React from "react";
+import React, { useState } from "react";
+import Row from "./Row";
 
 const SearchResults = props => {
   return (
@@ -12,30 +13,14 @@ const SearchResults = props => {
           <th scope="col">SurName</th>
           <th scope="col">Email</th>
           <th scope="col">Room Id</th>
-          <th scope="col">Check In Day</th>
-          <th scope="col">Check Out Day</th>
+          <th scope="col">Check In Date</th>
+          <th scope="col">Check Out Date</th>
           <th scope="col">Nights</th>
         </tr>
       </thead>
       <tbody>
         {props.results.map(info => {
-          const checkIn = moment(info.checkInDay);
-          const ckeckOut = moment(info.checkOutDay);
-          const numeroDeNoches = ckeckOut.diff(checkIn, "days");
-
-          return (
-            <tr>
-              <th scope="row">{info.id}</th>
-              <td>{info.title}</td>
-              <td>{info.firstName}</td>
-              <td>{info.surName}</td>
-              <td>{info.email}</td>
-              <td>{info.roomId}</td>
-              <td>{info.checkInDay}</td>
-              <td>{info.checkOutDay}</td>
-              <td>{numeroDeNoches}</td>
-            </tr>
-          );
+          return <Row data={info} />;
         })}
       </tbody>
     </table>

@@ -7,7 +7,7 @@ const cities = [
     cityName: "Glasgow",
     info:
       "Glasgow es una ciudad portuaria en el río Clyde, en el oeste de las Tierras Bajas de Escocia. Es famosa por su arquitectura modernista y victoriana, un rico legado de la prosperidad de la ciudad entre los siglos XVIII y XX debido al comercio y la construcción de embarcaciones. En la actualidad, es un centro cultural nacional y alberga instituciones como la Ópera Escocesa, el Ballet de Escocia y el Teatro Nacional de Escocia, al igual que aclamados museos y una próspera escena musical.",
-    enlace: "peoplemakeglasgow.com"
+    enlace: "https://peoplemakeglasgow.com/"
   },
   {
     img:
@@ -15,7 +15,7 @@ const cities = [
     cityName: "Manchester",
     info:
       "Manchester es una importante ciudad del noroeste de Inglaterra con un rico patrimonio industrial. El sistema de canales del siglo XVIII de la zona de conservación de Castlefield evoca los días en que la ciudad era un motor textil, y los visitantes pueden seguir su historia en el Museo de Ciencia e Industria interactivo. Los revitalizados muelles de Salford Quays ahora acogen el Museo Imperial de la Guerra, Sede Norte, diseñado por Daniel Libeskind, y el centro cultural The Lowry.",
-    enlace: "visitmanchester.com"
+    enlace: "https://www.visitmanchester.com/"
   },
   {
     img:
@@ -23,7 +23,7 @@ const cities = [
     cityName: "Londres",
     info:
       "Londres, la capital de Inglaterra y del Reino Unido, es una ciudad del siglo XXI con una historia que se remonta a la época romana. En su centro se alzan el imponente Palacio del Parlamento, la torre del icónico reloj Big Ben y la Abadía de Westminster, lugar de las coronaciones monárquicas británicas. Al otro lado del río Támesis, la rueda de observación London Eye ofrece vistas panorámicas del complejo cultural South Bank y de toda la ciudad.",
-    enlace: "visitlondon.com"
+    enlace: "https://visitlondon.com/"
   }
 ];
 
