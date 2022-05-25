@@ -10,6 +10,10 @@ const numeroDeNoches = (a, b) => {
 const Row = props => {
   const [selected, setSelected] = useState(false);
 
+  const handleClick = () => {
+    props.setSelectedId(props.data.id);
+  };
+
   return (
     <tr
       onClick={() => setSelected(!selected)}
@@ -24,6 +28,9 @@ const Row = props => {
       <td>{props.data.checkInDate}</td>
       <td>{props.data.checkOutDate}</td>
       <td>{numeroDeNoches(props.data.checkInDate, props.data.checkOutDate)}</td>
+      <td>
+        <button onClick={handleClick}>Show Profile</button>
+      </td>
     </tr>
   );
 };
